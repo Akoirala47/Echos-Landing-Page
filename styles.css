@@ -519,3 +519,134 @@ footer .footer-links a:hover { color: var(--ink); }
   margin: 0 auto;
   max-width: 1180px;
 }
+
+/* ===== mobile ===== */
+@media (max-width: 640px) {
+  /* nav */
+  .nav {
+    padding: 16px 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-cta {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* hero */
+  .hero {
+    padding: 36px 20px 20px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 9vw, 48px);
+    letter-spacing: -0.025em;
+  }
+  .hero h1 br {
+    display: none;
+  }
+  .hero .lede {
+    font-size: 16px;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-ctas .btn {
+    justify-content: center;
+  }
+  .hero-meta {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 11.5px;
+  }
+
+  /* window */
+  .window-wrap {
+    margin-top: 32px;
+    padding: 0 12px;
+  }
+
+  /* sections */
+  .section {
+    padding: 56px 20px;
+  }
+  .section-head {
+    margin-bottom: 32px;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 7vw, 36px);
+  }
+  .section-head p {
+    font-size: 15px;
+  }
+
+  /* feature grid — 1 col already at 860px; tighten padding */
+  .feature {
+    padding: 24px 20px;
+  }
+
+  /* brain */
+  .brain-inner {
+    padding: 48px 20px;
+    gap: 32px;
+  }
+
+  /* privacy */
+  .privacy-section {
+    padding: 56px 20px;
+    gap: 24px;
+  }
+
+  /* how-it-works */
+  .how-grid {
+    gap: 16px;
+  }
+
+  /* final cta */
+  .final-cta {
+    padding: 72px 20px 48px;
+  }
+  .final-cta h2 {
+    font-size: clamp(28px, 8vw, 44px);
+  }
+  .final-cta p {
+    font-size: 15px;
+  }
+  .final-cta .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .final-cta .hero-ctas .btn {
+    justify-content: center;
+  }
+
+  /* footer */
+  footer {
+    padding: 24px 20px;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* tablet tweaks (641–900px) */
+@media (min-width: 641px) and (max-width: 900px) {
+  .nav {
+    padding: 20px 24px;
+  }
+  .nav-links {
+    gap: 18px;
+    font-size: 13px;
+  }
+  .section {
+    padding: 72px 24px;
+  }
+  .brain-inner {
+    padding: 72px 24px;
+  }
+  .privacy-section {
+    padding: 72px 24px;
+  }
+}
